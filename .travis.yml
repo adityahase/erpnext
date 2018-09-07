@@ -44,9 +44,12 @@ jobs:
   include:
     - stage: test
       script:
-        - set -e
+        - ls -al sites
         - bench run-tests --app erpnext --coverage
+        - ls -al sites
       after_script:
+        - ls -al sites
+        - cat sites/.coverage
         - coveralls -b apps/erpnext -d ../../sites/.coverage
       env: Server Side Test
     - # stage
