@@ -1,6 +1,5 @@
 from __future__ import unicode_literals
 import frappe
-import erpnext.education.utils as utils
 
 def get_context(context):
-    context.featured = utils.get_featured_programs()
+    context.featured = frappe.get_all('Program', filters={'is_featured': 1}, fields=['program_name', 'program_code', 'description', 'hero_image'])
