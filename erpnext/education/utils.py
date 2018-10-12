@@ -54,7 +54,7 @@ def validate_duplicate_student(students):
 
 def get_student_name(email=None):
 	"""Returns student user name, example EDU-STU-2018-00001 (Based on the naming series).
-
+	
 	:param user: a user email address
 	"""
 	try:
@@ -65,8 +65,7 @@ def get_student_name(email=None):
 @frappe.whitelist()
 def evaluate_quiz(quiz_response, **kwargs):
 	"""LMS Function: Evaluates a simple multiple choice quiz.  It recieves arguments from `www/lms/course.js` as dictionary using FormData[1].
-
-
+	
 	:param quiz_response: contains user selected choices for a quiz in the form of a string formatted as a dictionary. The function uses `json.loads()` to convert it to a python dictionary.
 	[1]: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 	"""
@@ -91,8 +90,8 @@ def add_activity(content_type, **kwargs):
 	activity_does_not_exists, activity = check_entry_exists(kwargs.get('program'))
 	if activity_does_not_exists:
 		current_activity = frappe.get_doc({
-			"doctype": "Course Activity",
-			"student_id": get_student_id(frappe.session.user),
+			"doctype": "Student Course Activity",
+			"student_id": frappe.session.user,
 			"program_name": kwargs.get('program'),
 			"lms_activity": [{
 				"course_name": kwargs.get('course'),
@@ -131,102 +130,8 @@ def add_activity(content_type, **kwargs):
 
 def check_entry_exists(program):
 	try:
-		activity_name = frappe.get_all("Course Activity", filters={"student_id": get_student_id(frappe.session.user), "program_name": program})[0]
+		activity_name = frappe.get_all("Student Course Activity", filters={"student_id": frappe.session.user, "program_name": program})[0]
 	except IndexError:
 		return True, None
 	else:
-		return None, frappe.get_doc("Course Activity", activity_name)
-
-def get_contents_in_course(course_name):
-	try:
-		course_doc = frappe.get_doc("Course", {"name":course_name, "is_published": True})
-		return [frappe.get_doc("Content", content.content) for content in course_doc.get_all_children()]
-	except frappe.DoesNotExistError:
-		return None
-
-def get_courses_in_program(program):
-	try:
-		program_doc = frappe.get_doc("Program", program)
-		if program_doc.is_published:
-			course_list = [frappe.get_doc("Course", course.course_name) for course in program_doc.get_all_children()]
-			return [course for course in course_list if course.is_published == True]
-		else:
-			return None
-	except frappe.DoesNotExistError:
-		return None
-
-def get_program():
-	program_list = frappe.get_list("Program", filters={"is_published": is_published})
-	if program_list:
-		return program_list
-	else:
-		return None
-
-def get_featured_programs():
-	featured_programs_name = frappe.get_list("Program", filters={"is_published": True, "is_featured": True})
-	featured_list = [frappe.get_doc("Program", program["name"]) for program in featured_programs_name]
-	if featured_list:
-		return featured_list
-	else:
-		return None
-
-@frappe.whitelist()
-def add_course_enrollment(course, email):
-	student_id = get_student_id(email)
-	if not get_course_enrollment(course, email):
-		enrollment = frappe.get_doc({
-			"doctype": "Course Enrollment",
-			"student": student_id,
-			"course": course
-		})
-		enrollment.save()
-		frappe.db.commit()
-		return enrollment
-
-def get_course_enrollment(course, email):
-	student_id = get_student_id(email)
-	try:
-		return frappe.get_list("Course Enrollment", filters={'course':course, 'student':student_id})[0]
-	except IndexError:
-		return None
-
-def get_student_id(email):
-	"""Returns Student ID, example EDU-STU-2018-00001 from email address
-
-	:params email: email address of the student"""
-	try:
-		return frappe.get_list('Student', filters={'student_email_id': email})[0].name
-	except IndexError:
-		frappe.throw("Student Account with email:{0} does not exist".format(email))
-
-def get_quiz(content):
-	try:
-		quiz_doc = frappe.get_doc("Content", content)
-		if quiz_doc.content_type != "Quiz":
-			frappe.throw("<b>{0}</b> is not a Quiz".format(content))
-		quiz = [frappe.get_doc("Question", item.question_link) for item in quiz_doc.questions]
-		return quiz
-	except frappe.DoesNotExistError:
-		frappe.throw("The quiz \"{0}\" does not exist".format(content))
-
-def get_quiz_as_dict(content):
-	"""Helper Function to get questions for a quiz
-
-	:params content: name of a Content doctype with content_type quiz"""
-	try:
-		quiz_doc = frappe.get_doc("Content", content)
-		if quiz_doc.content_type != "Quiz":
-			frappe.throw("<b>{0}</b> is not a Quiz".format(content))
-
-		import json
-		quiz = [frappe.get_doc("Question", item.question_link) for item in quiz_doc.questions]
-		data = []
-		for question in quiz:
-			d = {}
-			d['id'] = question.name
-			d['question'] = question.question
-			d['options'] = [item.option for item in quiz[0].options]
-			data.append(d)
-		return data
-	except frappe.DoesNotExistError:
-		frappe.throw("The quiz \"{0}\" does not exist".format(content))
+		return None, frappe.get_doc("Student Course Activity", activity_name)
