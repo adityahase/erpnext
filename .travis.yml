@@ -2,7 +2,7 @@ language: python
 dist: trusty
 
 python:
-  - "2.7"
+  - "pypy3.5"
 
 services:
   - mysql
