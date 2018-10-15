@@ -19,7 +19,7 @@ def get_data():
 				'items': ['Assessment Result']
 			},
 			{
-				'label': _('Student LMS Activity'),
+				'label': _('Student Portal Activity'),
 				'items': ['Course Activity', 'Quiz Activity' ]
 			},
 			{
