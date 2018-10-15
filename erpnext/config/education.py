@@ -197,7 +197,11 @@ def get_data():
 				},
 				{
 					"type": "doctype",
-					"name": "Quiz"
+					"name": "Question"
+				},
+				{
+					"type": "doctype",
+					"name": "Instructor"
 				},
 				{
 					"type": "doctype",
@@ -215,10 +219,6 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Course Activity"
-				},
-				{
-					"type": "doctype",
-					"name": "Quiz Activity"
 				}
 			]
 		},
