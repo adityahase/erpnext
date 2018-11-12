@@ -1976,7 +1976,11 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
+<<<<<<< HEAD
  "modified": "2018-10-24 02:07:21.618275", 
+=======
+ "modified": "2018-10-11 11:52:39.047935", 
+>>>>>>> Magic
  "modified_by": "Administrator", 
  "module": "Manufacturing", 
  "name": "BOM", 

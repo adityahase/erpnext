@@ -112,10 +112,13 @@ export default {
 			const review = Object.assign({}, this.user_review, {
 				content: this.review_content.get_value()
 			});
+<<<<<<< HEAD
 
 			if (!hub.is_seller_registered()) {
 				frappe.throw(__('You need to login as a Marketplace User before you can add any reviews.'));
 			}
+=======
+>>>>>>> Magic
 
 			hub.call('add_item_review', {
 				hub_item_name: this.hub_item_name,

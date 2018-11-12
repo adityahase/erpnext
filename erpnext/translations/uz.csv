@@ -120,7 +120,11 @@ DocType: Delivery Note,Issue Credit Note,Kredit notasini berish
 DocType: Lab Prescription,Lab Prescription,Laboratoriya retsepti
 ,Delay Days,Kechikish kunlari
 apps/erpnext/erpnext/hr/report/vehicle_expenses/vehicle_expenses.py +26,Service Expense,Xizmat ketadi
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1012,Serial Number: {0} is already referenced in Sales Invoice: {1},Seriya raqami: {0} savdo faturasında zikr qilingan: {1}
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1002,Serial Number: {0} is already referenced in Sales Invoice: {1},Seriya raqami: {0} savdo faturasında zikr qilingan: {1}
+>>>>>>> Magic
 DocType: Bank Statement Transaction Invoice Item,Invoice,Billing
 DocType: Purchase Invoice Item,Item Weight Details,Og&#39;irligi haqida ma&#39;lumot
 DocType: Asset Maintenance Log,Periodicity,Muntazamlik
@@ -153,6 +157,7 @@ DocType: Company,Phone No,Telefon raqami
 DocType: Delivery Trip,Initial Email Notification Sent,Dastlabki elektron pochta xabari yuborildi
 DocType: Bank Statement Settings,Statement Header Mapping,Statistikani sarlavhasini xaritalash
 ,Sales Partners Commission,Savdo hamkorlari komissiyasi
+apps/erpnext/erpnext/hr/doctype/employee/employee.py +25,Please setup Employee Naming System in Human Resource &gt; HR Settings,Inson resurslari&gt; HR parametrlarini Xodimlar uchun nomlash tizimini sozlang
 DocType: Soil Texture,Sandy Clay Loam,Sandy Clay Loam
 DocType: Purchase Invoice,Rounding Adjustment,Yumaloq regulyatsiya
 apps/erpnext/erpnext/setup/doctype/company/company.py +50,Abbreviation cannot have more than 5 characters,Qisqartirishda 5dan ortiq belgi bo&#39;lishi mumkin emas
@@ -196,7 +201,11 @@ apps/erpnext/erpnext/accounts/party.py +42,Not permitted for {0},{0} uchun ruxsa
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +617,Get items from,Elementlarni oling
 DocType: Price List,Price Not UOM Dependant,Narx UOMga qaram emas
 DocType: Purchase Invoice,Apply Tax Withholding Amount,Soliqni ushlab turish summasini qo&#39;llash
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +539,Stock cannot be updated against Delivery Note {0},Stokni etkazib berishga qarshi yangilanib bo&#39;lmaydi. {0}
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +538,Stock cannot be updated against Delivery Note {0},Stokni etkazib berishga qarshi yangilanib bo&#39;lmaydi. {0}
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/report/tds_computation_summary/tds_computation_summary.py +124,Total Amount Credited,Jami kredit miqdori
 apps/erpnext/erpnext/templates/pages/home.py +25,Product {0},Mahsulot {0}
 apps/erpnext/erpnext/templates/generators/item_group.html +33,No items listed,Ro&#39;yxatda hech narsa yo&#39;q
@@ -424,7 +433,11 @@ apps/erpnext/erpnext/manufacturing/doctype/production_planning_tool/production_p
 DocType: Delivery Note Item,Against Sales Invoice Item,Sotuvdagi schyot-fakturaga qarshi
 DocType: Agriculture Analysis Criteria,Linked Doctype,Bog&#39;langan Doctype
 apps/erpnext/erpnext/accounts/report/cash_flow/cash_flow.py +98,Net Cash from Financing,Moliyadan aniq pul
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/page/pos/pos.js +2387,"LocalStorage is full , did not save","LocalStorage to&#39;liq, saqlanmadi"
+=======
+apps/erpnext/erpnext/accounts/page/pos/pos.js +2386,"LocalStorage is full , did not save","LocalStorage to&#39;liq, saqlanmadi"
+>>>>>>> Magic
 DocType: Lead,Address & Contact,Manzil &amp; Kontakt
 DocType: Leave Allocation,Add unused leaves from previous allocations,Oldindan ajratilgan mablag&#39;lardan foydalanilmagan barglarni qo&#39;shing
 DocType: Sales Partner,Partner website,Hamkorlik veb-sayti
@@ -460,6 +473,7 @@ DocType: Email Digest,Profit & Loss,Qor va ziyon
 apps/erpnext/erpnext/utilities/user_progress.py +147,Litre,Litr
 DocType: Task,Total Costing Amount (via Time Sheet),Jami xarajat summasi (vaqt jadvalidan)
 apps/erpnext/erpnext/education/doctype/fee_schedule/fee_schedule.py +76,Please setup Students under Student Groups,Talabalar uchun Talabalar Guruhi ostida tanlansin
+apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +181,Supplier &gt; Supplier Type,Yetkazib beruvchi&gt; Yetkazib beruvchi turi
 apps/erpnext/erpnext/manufacturing/doctype/job_card/job_card.js +31,Complete Job,To&#39;liq ish
 DocType: Item Website Specification,Item Website Specification,Veb-saytning spetsifikatsiyasi
 apps/erpnext/erpnext/hr/doctype/leave_application/leave_application.py +543,Leave Blocked,Blokdan chiqing
@@ -530,6 +544,7 @@ DocType: Leave Allocation,HR-LAL-.YYYY.-,HR-LAL-YYYYY.-
 DocType: Exchange Rate Revaluation Account,Balance In Base Currency,Asosiy valyutada muvozanat
 DocType: Supplier Scorecard Scoring Standing,Max Grade,Maks daraja
 DocType: Email Digest,New Quotations,Yangi takliflar
+apps/erpnext/erpnext/manufacturing/doctype/job_card/job_card.py +39,"Start date and end date is overlapping with the job card <a href=""#Form/Job Card/{0}"">{1}</a>","Boshlanish sanasi va tugash sanasi <a href=""#Form/Job Card/{0}"">{1}</a>"
 apps/erpnext/erpnext/hr/doctype/attendance_request/attendance_request.py +60,Attendance not submitted for {0} as {1} on leave.,Davom etish {0} uchun {1} sifatida qoldirilmadi.
 DocType: Journal Entry,Payment Order,To&#39;lov Buyurtma
 DocType: HR Settings,Emails salary slip to employee based on preferred email selected in Employee,Xodimga ish haqi elektron pochtasi xodimiga tanlangan e-pochtaga asoslanib yuboriladi
@@ -540,7 +555,11 @@ DocType: Purchase Invoice Item,Enable Deferred Expense,Kechiktirilgan xarajatlar
 DocType: Asset,Next Depreciation Date,Keyingi Amortizatsiya sanasi
 apps/erpnext/erpnext/projects/doctype/activity_type/activity_type.js +3,Activity Cost per Employee,Xodimga ko&#39;ra harajatlar
 DocType: Accounts Settings,Settings for Accounts,Hisob sozlamalari
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +800,Supplier Invoice No exists in Purchase Invoice {0},Yetkazib beruvchi hisob-fakturasi yo&#39;q {0}
+=======
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +794,Supplier Invoice No exists in Purchase Invoice {0},Yetkazib beruvchi hisob-fakturasi yo&#39;q {0}
+>>>>>>> Magic
 apps/erpnext/erpnext/config/selling.py +118,Manage Sales Person Tree.,Sotuvdagi shaxslar daraxti boshqaruvi.
 DocType: Job Applicant,Cover Letter,Biriktirilgan xat
 apps/erpnext/erpnext/accounts/report/bank_reconciliation_statement/bank_reconciliation_statement.py +37,Outstanding Cheques and Deposits to clear,Olinadigan chexlar va depozitlar
@@ -569,7 +588,10 @@ apps/erpnext/erpnext/hotels/doctype/hotel_room_reservation/hotel_room_reservatio
 DocType: Journal Entry,Multi Currency,Ko&#39;p valyuta
 DocType: Bank Statement Transaction Invoice Item,Invoice Type,Faktura turi
 DocType: Employee Benefit Claim,Expense Proof,Eksportni isbotlash
+<<<<<<< HEAD
 apps/erpnext/erpnext/erpnext_integrations/doctype/quickbooks_migrator/quickbooks_migrator.py +318,Saving {0},{0} saqlash
+=======
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.js +990,Delivery Note,Yetkazib berish eslatmasi
 DocType: Patient Encounter,Encounter Impression,Ta&#39;sir bilan taaluqli
 apps/erpnext/erpnext/config/learn.py +82,Setting up Taxes,Soliqni o&#39;rnatish
@@ -577,7 +599,11 @@ apps/erpnext/erpnext/accounts/report/asset_depreciations_and_balances/asset_depr
 DocType: Volunteer,Morning,Ertalab
 apps/erpnext/erpnext/accounts/utils.py +374,Payment Entry has been modified after you pulled it. Please pull it again.,"To&#39;lov kirish kiritilgandan keyin o&#39;zgartirildi. Iltimos, yana torting."
 DocType: Program Enrollment Tool,New Student Batch,Yangi talabalar partiyasi
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/doctype/item/item.py +497,{0} entered twice in Item Tax,{0} - mahsulotni soliqqa ikki marta kirgan
+=======
+apps/erpnext/erpnext/stock/doctype/item/item.py +496,{0} entered twice in Item Tax,{0} - mahsulotni soliqqa ikki marta kirgan
+>>>>>>> Magic
 apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py +121,Summary for this week and pending activities,Bu hafta uchun xulosa va kutilayotgan tadbirlar
 DocType: Student Applicant,Admitted,Qabul qilingan
 DocType: Workstation,Rent Cost,Ijara haqi
@@ -585,6 +611,8 @@ apps/erpnext/erpnext/accounts/report/asset_depreciation_ledger/asset_depreciatio
 apps/erpnext/erpnext/setup/doctype/email_digest/templates/default.html +97,Upcoming Calendar Events,Kelgusi taqvim tadbirlari
 apps/erpnext/erpnext/public/js/templates/item_quick_entry.html +1,Variant Attributes,Variant xususiyatlari
 apps/erpnext/erpnext/hr/report/monthly_attendance_sheet/monthly_attendance_sheet.py +114,Please select month and year,"Iltimos, oy va yilni tanlang"
+apps/erpnext/erpnext/hr/doctype/employee_transfer/employee_transfer.py +53,"Please delete the Employee <a href=""#Form/Employee/{0}"">{0}</a>\
+					to cancel this document","Iltimos, ushbu hujjatni bekor qilish uchun &quot; <a href=""#Form/Employee/{0}"">{0}</a> \&quot; xodimini o&#39;chirib tashlang"
 DocType: Employee,Company Email,Kompaniyaning elektron pochta manzili
 DocType: GL Entry,Debit Amount in Account Currency,Hisob valyutasidagi hisob raqamining miqdori
 DocType: Supplier Scorecard,Scoring Standings,Natijalar reytingi
@@ -691,7 +719,11 @@ DocType: Lab Test Template,No Result,Natija yo&#39;q
 DocType: Purchase Invoice Item,Quantity and Rate,Miqdor va foiz
 DocType: Delivery Note,% Installed,O&#39;rnatilgan
 apps/erpnext/erpnext/utilities/user_progress.py +230,Classrooms/ Laboratories etc where lectures can be scheduled.,Darslar / laboratoriyalar va boshqalar.
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1311,Company currencies of both the companies should match for Inter Company Transactions.,Ham kompaniyaning kompaniyaning valyutalari Inter Company Transactions uchun mos kelishi kerak.
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1301,Company currencies of both the companies should match for Inter Company Transactions.,Ham kompaniyaning kompaniyaning valyutalari Inter Company Transactions uchun mos kelishi kerak.
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/doctype/cost_center/cost_center.js +95,Please enter company name first,Avval kompaniya nomini kiriting
 DocType: Travel Itinerary,Non-Vegetarian,Non-vegetarianlar
 DocType: Purchase Invoice,Supplier Name,Yetkazib beruvchi nomi
@@ -817,7 +849,11 @@ apps/erpnext/erpnext/config/non_profit.py +48,Volunteer Type information.,Ixtiyo
 DocType: Cash Flow Mapping Template,Cash Flow Mapping Template,Pul oqimi xaritalash shabloni
 DocType: Travel Request,Costing Details,Xarajatlar haqida ma&#39;lumot
 apps/erpnext/erpnext/selling/report/sales_person_wise_transaction_summary/sales_person_wise_transaction_summary.js +64,Show Return Entries,Qaytish yozuvlarini ko&#39;rsatish
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/page/pos/pos.js +2567,Serial no item cannot be a fraction,Serial hech bir element qisman bo&#39;lolmaydi
+=======
+apps/erpnext/erpnext/accounts/page/pos/pos.js +2566,Serial no item cannot be a fraction,Serial hech bir element qisman bo&#39;lolmaydi
+>>>>>>> Magic
 DocType: Journal Entry,Difference (Dr - Cr),Farq (shifokor - Cr)
 DocType: Bank Guarantee,Providing,Ta&#39;minlash
 DocType: Account,Profit and Loss,Qor va ziyon
@@ -883,7 +919,11 @@ apps/erpnext/erpnext/config/buying.py +150,All Supplier scorecards.,Barcha etkaz
 DocType: Buying Settings,Purchase Receipt Required,Qabul qilish pulligizga.Albatta talab qilinadi
 DocType: Delivery Note,Rail,Rail
 apps/erpnext/erpnext/stock/doctype/stock_entry/stock_entry.py +263,Target warehouse in row {0} must be same as Work Order,{0} qatoridagi maqsadli ombor Ish tartibi bilan bir xil bo&#39;lishi kerak
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/doctype/item/item.py +170,Valuation Rate is mandatory if Opening Stock entered,Ochiq aktsiyadorlik jamg&#39;armasi kiritilgan taqdirda baholash mezonlari majburiydir
+=======
+apps/erpnext/erpnext/stock/doctype/item/item.py +169,Valuation Rate is mandatory if Opening Stock entered,Ochiq aktsiyadorlik jamg&#39;armasi kiritilgan taqdirda baholash mezonlari majburiydir
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py +143,No records found in the Invoice table,Billing-jadvalida yozuvlar topilmadi
 apps/erpnext/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.js +36,Please select Company and Party Type first,Marhamat qilib Kompaniya va Partiya turini tanlang
 apps/erpnext/erpnext/accounts/doctype/pos_profile/pos_profile.py +31,"Already set default in pos profile {0} for user {1}, kindly disabled default",{0} uchun {0} profilidagi profilni sukut saqlab qo&#39;ygansiz
@@ -911,7 +951,10 @@ DocType: Employee,Personal Bio,Shaxsiy Bio
 DocType: C-Form,IV,IV
 apps/erpnext/erpnext/non_profit/report/expiring_memberships/expiring_memberships.py +15,Membership ID,Registratsiya raqami
 apps/erpnext/erpnext/templates/pages/order.html +77,Delivered: {0},Tasdiqlangan: {0}
+<<<<<<< HEAD
 DocType: QuickBooks Migrator,Connected to QuickBooks,QuickBooks-ga ulangan
+=======
+>>>>>>> Magic
 DocType: Bank Statement Transaction Entry,Payable Account,To&#39;lanadigan hisob
 DocType: Payment Entry,Type of Payment,To&#39;lov turi
 apps/erpnext/erpnext/hr/doctype/compensatory_leave_request/compensatory_leave_request.py +18,Half Day Date is mandatory,Yarim kunlik sana majburiydir
@@ -1010,7 +1053,11 @@ apps/erpnext/erpnext/setup/setup_wizard/operations/install_fixtures.py +112,Mana
 DocType: Payment Entry,Payment From / To,To&#39;lov / To
 apps/erpnext/erpnext/accounts/report/budget_variance_report/budget_variance_report.js +8,From Fiscal Year,Moliyaviy yildan boshlab
 apps/erpnext/erpnext/selling/doctype/customer/customer.py +185,New credit limit is less than current outstanding amount for the customer. Credit limit has to be atleast {0},Yangi kredit limiti mijoz uchun mavjud summasidan kamroq. Kredit cheklovi atigi {0} bo&#39;lishi kerak
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +453,Please set account in Warehouse {0},"Iltimos, hisob qaydnomasini {0}"
+=======
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +447,Please set account in Warehouse {0},"Iltimos, hisob qaydnomasini {0}"
+>>>>>>> Magic
 apps/erpnext/erpnext/controllers/trends.py +39,'Based On' and 'Group By' can not be same,&#39;Based On&#39; va &#39;Group By&#39; bir xil bo&#39;lishi mumkin emas
 DocType: Sales Person,Sales Person Targets,Sotuvdagi shaxsning maqsadlari
 DocType: Work Order Operation,In minutes,Daqiqada
@@ -1023,7 +1070,11 @@ DocType: Student Batch Name,Batch Name,Partiya nomi
 DocType: Fee Validity,Max number of visit,Tashrifning maksimal soni
 ,Hotel Room Occupancy,Mehmonxona xonasi
 apps/erpnext/erpnext/manufacturing/doctype/production_order/production_order.py +339,Timesheet created:,Tuzilish sahifasi:
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1216,Please set default Cash or Bank account in Mode of Payment {0},"Iltimos, odatdagi Cash yoki Bank hisobini {0} To&#39;lov tartibi rejimida tanlang."
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1206,Please set default Cash or Bank account in Mode of Payment {0},"Iltimos, odatdagi Cash yoki Bank hisobini {0} To&#39;lov tartibi rejimida tanlang."
+>>>>>>> Magic
 apps/erpnext/erpnext/education/doctype/student_applicant/student_applicant.js +24,Enroll,Ro&#39;yxatga olish
 DocType: GST Settings,GST Settings,GST sozlamalari
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.py +81,Currency should be same as Price List Currency: {0},Valyuta bir xil bo&#39;lishi kerak Price List Valyuta: {0}
@@ -1180,7 +1231,11 @@ apps/erpnext/erpnext/stock/page/stock_balance/stock_balance.js +50,Reserved for 
 DocType: Soil Texture,Sand,Qum
 apps/erpnext/erpnext/setup/setup_wizard/data/industry_type.py +25,Energy,Energiya
 DocType: Opportunity,Opportunity From,Imkoniyatdan foydalanish
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1000,Row {0}: {1} Serial numbers required for Item {2}. You have provided {3}.,Row {0}: {1} Serial raqamlari {2} uchun kerak. Siz {3} ni taqdim qildingiz.
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +990,Row {0}: {1} Serial numbers required for Item {2}. You have provided {3}.,Row {0}: {1} Serial raqamlari {2} uchun kerak. Siz {3} ni taqdim qildingiz.
+>>>>>>> Magic
 apps/erpnext/erpnext/restaurant/doctype/restaurant_order_entry/restaurant_order_entry.py +79,Please select a table,"Iltimos, jadval tanlang"
 DocType: BOM,Website Specifications,Veb-saytning texnik xususiyatlari
 DocType: Special Test Items,Particulars,Xususan
@@ -1189,7 +1244,11 @@ apps/erpnext/erpnext/controllers/buying_controller.py +387,Row {0}: Conversion F
 DocType: Student,A+,A +
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.py +353,"Multiple Price Rules exists with same criteria, please resolve conflict by assigning priority. Price Rules: {0}","Ko&#39;p narx qoidalari bir xil mezonlarga ega, iltimos, birinchi o&#39;ringa tayinlash orqali mojaroni hal qiling. Narxlar qoidalari: {0}"
 DocType: Exchange Rate Revaluation,Exchange Rate Revaluation Account,Valyuta kursini qayta baholash hisobi
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +534,Cannot deactivate or cancel BOM as it is linked with other BOMs,BOMni boshqa BOMlar bilan bog&#39;langanidek o&#39;chirib qo&#39;yish yoki bekor qilish mumkin emas
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +533,Cannot deactivate or cancel BOM as it is linked with other BOMs,BOMni boshqa BOMlar bilan bog&#39;langanidek o&#39;chirib qo&#39;yish yoki bekor qilish mumkin emas
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/doctype/exchange_rate_revaluation/exchange_rate_revaluation.js +106,Please select Company and Posting Date to getting entries,Yozuvlar olish uchun Kompaniya va Xabar yuborish tarixini tanlang
 DocType: Asset,Maintenance,Xizmat
 apps/erpnext/erpnext/healthcare/doctype/lab_test/lab_test.js +28,Get from Patient Encounter,Bemor uchrashuvidan oling
@@ -1228,6 +1287,10 @@ DocType: Lab Test,Lab Test,Laboratoriya tekshiruvi
 DocType: Student Report Generation Tool,Student Report Generation Tool,Isoning shogirdi hisoboti yaratish vositasi
 DocType: Healthcare Schedule Time Slot,Healthcare Schedule Time Slot,Sog&#39;liqni saqlash jadvali vaqtli uyasi
 apps/erpnext/erpnext/regional/report/eway_bill/eway_bill.py +163,Doc Name,Doc nomi
+<<<<<<< HEAD
+=======
+apps/erpnext/erpnext/education/doctype/instructor/instructor.py +15,Please setup Instructor Naming System in Education &gt; Education Settings,"Marhamat, Ta&#39;lim bo&#39;yicha o&#39;qituvchilarni nomlash tizimini sozlash&gt; Ta&#39;lim sozlamalari"
+>>>>>>> Magic
 DocType: Expense Claim Detail,Expense Claim Type,Xarajat shikoyati turi
 DocType: Shopping Cart Settings,Default settings for Shopping Cart,Savatga savatni uchun standart sozlamalar
 apps/erpnext/erpnext/healthcare/doctype/practitioner_schedule/practitioner_schedule.js +27,Add Timeslots,Timeslots-ni qo&#39;shish
@@ -1289,8 +1352,12 @@ DocType: Payment Reconciliation,Minimum Invoice Amount,Minimal Billing miqdori
 apps/erpnext/erpnext/accounts/doctype/gl_entry/gl_entry.py +112,{0} {1}: Cost Center {2} does not belong to Company {3},{0} {1}: xarajatlar markazi {2} Kompaniyaga tegishli emas {3}
 apps/erpnext/erpnext/utilities/user_progress.py +92,Upload your letter head (Keep it web friendly as 900px by 100px),Maktubingiz boshini yuklang (veb-sahifani do&#39;stingiz sifatida 900px sifatida 100px sifatida saqlang)
 apps/erpnext/erpnext/accounts/doctype/gl_entry/gl_entry.py +89,{0} {1}: Account {2} cannot be a Group,{0} {1}: Hisob {2} guruh bo&#39;lolmaydi
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +367,Timesheet {0} is already completed or cancelled,Vaqt jadvalining {0} allaqachon tugallangan yoki bekor qilingan
 DocType: QuickBooks Migrator,QuickBooks Migrator,QuickBooks Migrator
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +366,Timesheet {0} is already completed or cancelled,Vaqt jadvalining {0} allaqachon tugallangan yoki bekor qilingan
+>>>>>>> Magic
 apps/erpnext/erpnext/templates/pages/projects.html +42,No tasks,Vazifalar yo&#39;q
 apps/erpnext/erpnext/healthcare/doctype/patient_appointment/patient_appointment.py +81,Sales Invoice {0} created as paid,Sotuvdagi taqdim etgan {0} pullik qilib yaratilgan
 DocType: Item Variant Settings,Copy Fields to Variant,Maydonlarni Variantlarga nusxalash
@@ -1414,7 +1481,11 @@ apps/erpnext/erpnext/stock/report/warehouse_wise_item_balance_age_and_value/ware
 apps/erpnext/erpnext/manufacturing/doctype/production_order/production_order.py +322,Unable to find Time Slot in the next {0} days for Operation {1},Operatsion {1} uchun keyingi {0} kunda Time Slotni topib bo&#39;lmadi
 DocType: Work Order,Plan material for sub-assemblies,Sub-assemblies uchun rejalashtirilgan material
 apps/erpnext/erpnext/config/selling.py +97,Sales Partners and Territory,Savdo hamkorlari va hududi
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +623,BOM {0} must be active,BOM {0} faol bo&#39;lishi kerak
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +622,BOM {0} must be active,BOM {0} faol bo&#39;lishi kerak
+>>>>>>> Magic
 apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.py +427,No Items available for transfer,O&#39;tkazish uchun hech narsa mavjud emas
 DocType: Employee Boarding Activity,Activity Name,Faoliyat nomi
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +860,Change Release Date,Chiqish sanasini o&#39;zgartirish
@@ -1430,7 +1501,11 @@ DocType: Vital Signs,One Sided,Bir tomonlama
 apps/erpnext/erpnext/stock/doctype/serial_no/serial_no.py +218,Serial No {0} does not belong to Item {1},No {0} seriyasi {1} mahsulotiga tegishli emas
 DocType: Purchase Receipt Item Supplied,Required Qty,Kerakli son
 DocType: Marketplace Settings,Custom Data,Maxsus ma&#39;lumotlar
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.py +127,Warehouses with existing transaction can not be converted to ledger.,Mavjud bitimlarga ega bo&#39;lgan omborlar kitobga o&#39;tkazilmaydi.
+=======
+apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.py +126,Warehouses with existing transaction can not be converted to ledger.,Mavjud bitimlarga ega bo&#39;lgan omborlar kitobga o&#39;tkazilmaydi.
+>>>>>>> Magic
 apps/erpnext/erpnext/controllers/buying_controller.py +570,Serial no is mandatory for the item {0},Seriya no {0} elementi uchun majburiy emas
 DocType: Bank Reconciliation,Total Amount,Umumiy hisob
 apps/erpnext/erpnext/accounts/report/tds_computation_summary/tds_computation_summary.py +24,From Date and To Date lie in different Fiscal Year,"Sana va tarixdan boshlab, har xil moliyaviy yilda joylashadi"
@@ -1512,7 +1587,11 @@ DocType: Amazon MWS Settings,BR,BR
 apps/erpnext/erpnext/regional/report/eway_bill/eway_bill.py +201,From Place,Joydan
 apps/erpnext/erpnext/hr/doctype/salary_slip/salary_slip.py +460,Net Pay cannnot be negative,Net Paynning salbiy bo&#39;lishi mumkin
 DocType: Student Admission,Publish on website,Saytda e&#39;lon qiling
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +778,Supplier Invoice Date cannot be greater than Posting Date,Yetkazib beruvchi hisob-fakturasi sanasi yuborish kunidan kattaroq bo&#39;lishi mumkin emas
+=======
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +772,Supplier Invoice Date cannot be greater than Posting Date,Yetkazib beruvchi hisob-fakturasi sanasi yuborish kunidan kattaroq bo&#39;lishi mumkin emas
+>>>>>>> Magic
 DocType: Installation Note,MAT-INS-.YYYY.-,MAT-INS-YYYYY.-
 DocType: Subscription,Cancelation Date,Bekor qilish sanasi
 DocType: Purchase Invoice Item,Purchase Order Item,Buyurtma Buyurtma Buyurtma
@@ -1573,7 +1652,11 @@ apps/erpnext/erpnext/controllers/selling_controller.py +139,Order Type must be o
 DocType: Lead,Next Contact Date,Keyingi aloqa kuni
 apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Opening Qty,Miqdorni ochish
 DocType: Healthcare Settings,Appointment Reminder,Uchrashuv eslatmasi
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +550,Please enter Account for Change Amount,O&#39;zgarish uchun Hisobni kiriting
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +549,Please enter Account for Change Amount,O&#39;zgarish uchun Hisobni kiriting
+>>>>>>> Magic
 DocType: Program Enrollment Tool Student,Student Batch Name,Isoning shogirdi nomi
 DocType: Holiday List,Holiday List Name,Dam olish ro&#39;yxati nomi
 DocType: Repayment Schedule,Balance Loan Amount,Kreditning qoldig&#39;i
@@ -1608,7 +1691,11 @@ apps/erpnext/erpnext/public/js/queries.js +96,Please specify a {0},"Iltimos, {0}
 apps/erpnext/erpnext/stock/doctype/stock_reconciliation/stock_reconciliation.py +74,Removed items with no change in quantity or value.,Sifat yoki qiymat o&#39;zgarmasdan chiqarilgan elementlar.
 DocType: Delivery Note,Delivery To,Etkazib berish
 apps/erpnext/erpnext/stock/doctype/item/item.js +465,Variant creation has been queued.,Variantni yaratish navbatga qo&#39;yildi.
+<<<<<<< HEAD
 apps/erpnext/erpnext/hr/doctype/daily_work_summary/daily_work_summary.py +100,Work Summary for {0},{0} uchun ish xulosasi
+=======
+apps/erpnext/erpnext/hr/doctype/daily_work_summary/daily_work_summary.py +99,Work Summary for {0},{0} uchun ish xulosasi
+>>>>>>> Magic
 DocType: Department,The first Leave Approver in the list will be set as the default Leave Approver.,"Ro&#39;yxatdagi birinchi Approverni jo&#39;natsangiz, asl qiymati &quot;Approver qoldiring&quot; deb belgilanadi."
 apps/erpnext/erpnext/stock/doctype/item/item.py +761,Attribute table is mandatory,Xususiyat jadvali majburiydir
 DocType: Production Plan,Get Sales Orders,Savdo buyurtmalarini oling
@@ -1802,7 +1889,11 @@ DocType: Leave Type,Is Earned Leave,Ishdan chiqdi
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.js +797,Cost Center For Item with Item Code ',Xarajat markazi Mahsulot kodi bo&#39;lgan mahsulot uchun &#39;
 DocType: Fee Validity,Valid Till,Tilligacha amal qiling
 DocType: Student Report Generation Tool,Total Parents Teacher Meeting,Ota-onalar o&#39;qituvchilari yig&#39;ilishi
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/page/pos/pos.js +2528,"Payment Mode is not configured. Please check, whether account has been set on Mode of Payments or on POS Profile.",To&#39;lov tartibi sozlanmagan. Hisobni to&#39;lov usulida yoki Qalin profilda o&#39;rnatganligini tekshiring.
+=======
+apps/erpnext/erpnext/accounts/page/pos/pos.js +2527,"Payment Mode is not configured. Please check, whether account has been set on Mode of Payments or on POS Profile.",To&#39;lov tartibi sozlanmagan. Hisobni to&#39;lov usulida yoki Qalin profilda o&#39;rnatganligini tekshiring.
+>>>>>>> Magic
 apps/erpnext/erpnext/buying/utils.py +74,Same item cannot be entered multiple times.,Xuddi shu element bir necha marta kiritilmaydi.
 apps/erpnext/erpnext/accounts/doctype/account/account_tree.js +30,"Further accounts can be made under Groups, but entries can be made against non-Groups","Boshqa hisoblar Guruhlar ostida amalga oshirilishi mumkin, lekin guruhlar bo&#39;lmagan guruhlarga qarshi yozuvlar kiritilishi mumkin"
 DocType: Lead,Lead,Qo&#39;rg&#39;oshin
@@ -1946,7 +2037,11 @@ apps/erpnext/erpnext/accounts/doctype/account/chart_of_accounts/verified/standar
 apps/erpnext/erpnext/stock/doctype/stock_entry/stock_entry.py +128,Row {0}: Qty is mandatory,Row {0}: Miqdor majburiydir
 DocType: Agriculture Analysis Criteria,Agriculture,Qishloq xo&#39;jaligi
 apps/erpnext/erpnext/manufacturing/doctype/blanket_order/blanket_order.js +15,Create Sales Order,Savdo buyurtmasini yaratish
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +516,Accounting Entry for Asset,Aktivlar uchun hisob yozuvi
+=======
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +510,Accounting Entry for Asset,Aktivlar uchun hisob yozuvi
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +871,Block Invoice,Blokni to&#39;ldirish
 apps/erpnext/erpnext/manufacturing/report/bom_stock_calculated/bom_stock_calculated.js +16,Quantity to Make,Qilish uchun miqdori
 apps/erpnext/erpnext/accounts/page/pos/pos.js +801,Sync Master Data,Master ma&#39;lumotlarini sinxronlash
@@ -1979,7 +2074,11 @@ DocType: Purchase Invoice Item,Item Tax Rate,Soliq to&#39;lovi stavkasi
 apps/erpnext/erpnext/regional/report/eway_bill/eway_bill.py +176,From Party Name,Partiya nomidan
 DocType: Student Group Student,Group Roll Number,Guruh Rulksi raqami
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +177,"For {0}, only credit accounts can be linked against another debit entry",{0} uchun faqat kredit hisoblari boshqa to&#39;lov usullariga bog&#39;liq bo&#39;lishi mumkin
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +660,Delivery Note {0} is not submitted,Yetkazib berish eslatmasi {0} yuborilmadi
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +659,Delivery Note {0} is not submitted,Yetkazib berish eslatmasi {0} yuborilmadi
+>>>>>>> Magic
 apps/erpnext/erpnext/stock/get_item_details.py +167,Item {0} must be a Sub-contracted Item,{0} mahsuloti sub-shartnoma qo&#39;yilgan bo&#39;lishi kerak
 apps/erpnext/erpnext/accounts/doctype/account/chart_of_accounts/verified/standard_chart_of_accounts.py +44,Capital Equipments,Kapital uskunalar
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +33,"Pricing Rule is first selected based on 'Apply On' field, which can be Item, Item Group or Brand.","Raqobatchilarimiz qoidasi &quot;Apply O&#39;n&quot; maydoniga asoslanib tanlangan, bular Item, Item Group yoki Tovar bo&#39;lishi mumkin."
@@ -2023,7 +2122,11 @@ DocType: Grading Scale Interval,Grade Code,Sinf kodi
 DocType: POS Item Group,POS Item Group,Qalin modda guruhi
 apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +17,Email Digest:,E-pochtasi:
 apps/erpnext/erpnext/stock/doctype/item_alternative/item_alternative.py +23,Alternative item must not be same as item code,Shu bilan bir qatorda element element kodi bilan bir xil bo&#39;lmasligi kerak
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +639,BOM {0} does not belong to Item {1},BOM {0} {1} mahsulotiga tegishli emas
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +638,BOM {0} does not belong to Item {1},BOM {0} {1} mahsulotiga tegishli emas
+>>>>>>> Magic
 DocType: Sales Partner,Target Distribution,Nishon tarqatish
 DocType: Purchase Invoice,06-Finalization of Provisional assessment,06 - Vaqtinchalik baholashni yakunlash
 DocType: Salary Slip,Bank Account No.,Bank hisob raqami
@@ -2320,7 +2423,11 @@ DocType: Patient,Tobacco Past Use,Tamaki iste&#39;mol qilish
 DocType: Travel Itinerary,Mode of Travel,Sayohat rejimi
 DocType: Sales Invoice Item,Brand Name,Brendning nomi
 DocType: Purchase Receipt,Transporter Details,Tashuvchi ma&#39;lumoti
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/page/pos/pos.js +2712,Default warehouse is required for selected item,Tanlangan element uchun odatiy ombor kerak
+=======
+apps/erpnext/erpnext/accounts/page/pos/pos.js +2711,Default warehouse is required for selected item,Tanlangan element uchun odatiy ombor kerak
+>>>>>>> Magic
 apps/erpnext/erpnext/utilities/user_progress.py +146,Box,Box
 apps/erpnext/erpnext/buying/doctype/request_for_quotation/request_for_quotation.js +1088,Possible Supplier,Mumkin bo&#39;lgan yetkazib beruvchi
 DocType: Budget,Monthly Distribution,Oylik tarqatish
@@ -2649,7 +2756,11 @@ apps/erpnext/erpnext/config/selling.py +179,Track Leads by Lead Source.,Qo&#39;r
 DocType: Shipping Rule Condition,A condition for a Shipping Rule,Yuk tashish qoidalari uchun shart
 apps/erpnext/erpnext/hr/doctype/employee/employee.py +182,Please enter ,"Iltimos, kiring"
 apps/erpnext/erpnext/assets/doctype/asset_maintenance/asset_maintenance.js +64,Maintenance Log,Xizmat yozuvi
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +256,Please set filter based on Item or Warehouse,"Iltimos, filtrni yoki odatiy ob&#39;ektni tanlang"
+=======
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +242,Please set filter based on Item or Warehouse,"Iltimos, filtrni yoki odatiy ob&#39;ektni tanlang"
+>>>>>>> Magic
 DocType: Packing Slip,The net weight of this package. (calculated automatically as sum of net weight of items),Ushbu paketning sof og&#39;irligi. (mahsulotning sof og&#39;irligi yig&#39;indisi sifatida avtomatik ravishda hisoblanadi)
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.js +43,Make Inter Company Journal Entry,Inter kompaniyasiga jurnalni kiritish
 apps/erpnext/erpnext/selling/page/point_of_sale/point_of_sale.js +901,Discount amount cannot be greater than 100%,Diskontning miqdori 100% dan ortiq bo&#39;lishi mumkin emas.
@@ -2658,7 +2769,11 @@ apps/erpnext/erpnext/accounts/doctype/cost_center/cost_center_tree.js +26,"Numbe
 DocType: Sales Order,To Deliver and Bill,Taqdim etish va Bill
 DocType: Student Group,Instructors,O&#39;qituvchilar
 DocType: GL Entry,Credit Amount in Account Currency,Hisob valyutasida kredit summasi
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +626,BOM {0} must be submitted,BOM {0} yuborilishi kerak
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +625,BOM {0} must be submitted,BOM {0} yuborilishi kerak
+>>>>>>> Magic
 apps/erpnext/erpnext/config/accounts.py +504,Share Management,Hissa boshqarish
 DocType: Authorization Control,Authorization Control,Avtorizatsiya nazorati
 apps/erpnext/erpnext/controllers/buying_controller.py +404,Row #{0}: Rejected Warehouse is mandatory against rejected Item {1},Roy # {0}: Rad etilgan QXI rad etilgan elementga qarshi majburiydir {1}
@@ -2693,7 +2808,10 @@ DocType: Taxable Salary Slab,From Amount,Miqdori bo&#39;yicha
 apps/erpnext/erpnext/selling/doctype/installation_note/installation_note.py +44,Item {0} is not a serialized Item,{0} mahsuloti seriyali element emas
 DocType: Leave Type,Encashment,Inkassatsiya
 DocType: Delivery Settings,Delivery Settings,Yetkazib berish sozlamalari
+<<<<<<< HEAD
 apps/erpnext/erpnext/erpnext_integrations/doctype/quickbooks_migrator/quickbooks_migrator.js +50,Fetch Data,Ma&#39;lumotlarni olish
+=======
+>>>>>>> Magic
 apps/erpnext/erpnext/hr/doctype/leave_policy/leave_policy.py +16,Maximum leave allowed in the leave type {0} is {1},{0} turidagi ruxsat etilgan maksimal ruxsatnoma {1}
 DocType: SMS Center,Create Receiver List,Qabul qiluvchining ro&#39;yxatini yaratish
 DocType: Vehicle,Wheels,Jantlar
@@ -2751,7 +2869,12 @@ apps/erpnext/erpnext/stock/doctype/serial_no/serial_no.py +229,Serial no {0} has
 DocType: Supplier,Supplier of Goods or Services.,Mahsulot yoki xizmatlarni yetkazib beruvchi.
 DocType: Budget,Fiscal Year,Moliyaviy yil
 DocType: Asset Maintenance Log,Planned,Rejalashtirilgan
+<<<<<<< HEAD
 apps/erpnext/erpnext/hr/utils.py +199,A {0} exists between {1} and {2} (,{1} va {2} () o&#39;rtasida {0} mavjud
+=======
+apps/erpnext/erpnext/hr/doctype/upload_attendance/upload_attendance.py +89,Please setup numbering series for Attendance via Setup &gt; Numbering Series,"Iltimos, Setup&gt; Numbering Series orqali tomosha qilish uchun raqamlash seriyasini sozlang"
+apps/erpnext/erpnext/hr/utils.py +198,A {0} exists between {1} and {2} (,{1} va {2} () o&#39;rtasida {0} mavjud
+>>>>>>> Magic
 DocType: Vehicle Log,Fuel Price,Yoqilg&#39;i narxi
 DocType: Bank Guarantee,Margin Money,Margin pul
 DocType: Budget,Budget,Byudjet
@@ -2904,7 +3027,11 @@ apps/erpnext/erpnext/accounts/doctype/payment_entry/payment_entry.py +389,Amount
 ,Quotation Trends,Iqtiboslar tendentsiyalari
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.py +166,Item Group not mentioned in item master for item {0},{0} element uchun maqola ustidagi ob&#39;ektlar guruhi
 DocType: GoCardless Mandate,GoCardless Mandate,GoCardsiz Mandate
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +440,Debit To account must be a Receivable account,Debet Hisobni hisobvaraq deb hisoblash kerak
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +439,Debit To account must be a Receivable account,Debet Hisobni hisobvaraq deb hisoblash kerak
+>>>>>>> Magic
 DocType: Shipping Rule,Shipping Amount,Yuk tashish miqdori
 DocType: Supplier Scorecard Period,Period Score,Davr hisoboti
 apps/erpnext/erpnext/public/js/event.js +19,Add Customers,Mijozlarni qo&#39;shish
@@ -3081,7 +3208,11 @@ apps/erpnext/erpnext/crm/report/prospects_engaged_but_not_converted/prospects_en
 apps/erpnext/erpnext/stock/doctype/item/item.js +107,Item Variant Settings,Variant sozlamalari
 apps/erpnext/erpnext/manufacturing/page/production_analytics/production_analytics.js +37,Select Company...,Kompaniyani tanlang ...
 DocType: Leave Control Panel,Leave blank if considered for all departments,Barcha bo&#39;limlarda ko&#39;rib chiqilsa bo&#39;sh qoldiring
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +506,{0} is mandatory for Item {1},{0} {1} mahsulot uchun majburiydir
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +505,{0} is mandatory for Item {1},{0} {1} mahsulot uchun majburiydir
+>>>>>>> Magic
 apps/erpnext/erpnext/manufacturing/doctype/production_plan/production_plan.js +136,"Item {0}: {1} qty produced, ","Mahsulot {0}: {1} qty ishlab chiqarilgan,"
 DocType: Payroll Entry,Fortnightly,Ikki kun davomida
 DocType: Currency Exchange,From Currency,Valyutadan
@@ -3130,7 +3261,11 @@ apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +400,{0} ag
 DocType: Account,Fixed Asset,Ruxsat etilgan aktiv
 DocType: Amazon MWS Settings,After Date,Sana so&#39;ng
 apps/erpnext/erpnext/config/stock.py +327,Serialized Inventory,Seriyali inventar
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1176,Invalid {0} for Inter Company Invoice.,Inter kompaniyasi taqdim etgani uchun {0} noto&#39;g&#39;ri.
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1166,Invalid {0} for Inter Company Invoice.,Inter kompaniyasi taqdim etgani uchun {0} noto&#39;g&#39;ri.
+>>>>>>> Magic
 ,Department Analytics,Bo&#39;lim tahlillari
 apps/erpnext/erpnext/regional/doctype/gst_settings/gst_settings.py +74,Email not found in default contact,E-pochta manzili standart kontaktda topilmadi
 apps/erpnext/erpnext/erpnext_integrations/doctype/woocommerce_settings/woocommerce_settings.js +23,Generate Secret,Yashirin yaratish
@@ -3181,7 +3316,11 @@ DocType: Student,Guardians,Himoyachilar
 apps/erpnext/erpnext/templates/pages/integrations/gocardless_confirmation.html +13,Payment Confirmation,To&#39;lovlarni tasdiqlash
 DocType: Shopping Cart Settings,Prices will not be shown if Price List is not set,"Narxlar ro&#39;yxati o&#39;rnatilmagan bo&#39;lsa, narxlar ko&#39;rsatilmaydi"
 DocType: Stock Entry,Total Incoming Value,Jami kirish qiymati
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +434,Debit To is required,Debet kerak
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +433,Debit To is required,Debet kerak
+>>>>>>> Magic
 DocType: Clinical Procedure,Inpatient Record,Statsionar qaydnomasi
 apps/erpnext/erpnext/utilities/activation.py +109,"Timesheets help keep track of time, cost and billing for activites done by your team","Vaqt jadvallari sizning jamoangiz tomonidan amalga oshiriladigan tadbirlar uchun vaqtni, narxni va hisob-kitoblarni kuzatish imkonini beradi"
 apps/erpnext/erpnext/stock/report/item_prices/item_prices.py +41,Purchase Price List,Sotib olish narxlari ro&#39;yxati
@@ -3292,7 +3431,11 @@ DocType: Payment Request,Make Sales Invoice,Sotuvdagi hisob-fakturani tanlang
 apps/erpnext/erpnext/accounts/doctype/account/chart_of_accounts/verified/standard_chart_of_accounts.py +62,Softwares,Dasturlar
 apps/erpnext/erpnext/crm/doctype/lead/lead.py +53,Next Contact Date cannot be in the past,Keyingi kontakt tarixi o&#39;tmishda bo&#39;lishi mumkin emas
 DocType: Company,For Reference Only.,Faqat ma&#39;lumot uchun.
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/page/pos/pos.js +2593,Select Batch No,Partiya no. Ni tanlang
+=======
+apps/erpnext/erpnext/accounts/page/pos/pos.js +2592,Select Batch No,Partiya no. Ni tanlang
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/report/general_ledger/general_ledger.py +79,Invalid {0}: {1},Noto&#39;g&#39;ri {0}: {1}
 ,GSTR-1,GSTR-1
 DocType: Fee Validity,Reference Inv,Malumot
@@ -3310,8 +3453,13 @@ apps/erpnext/erpnext/stock/get_item_details.py +146,No Item with Barcode {0},{0}
 DocType: Normal Test Items,Require Result Value,Natijada qiymat talab qiling
 DocType: Item,Show a slideshow at the top of the page,Sahifaning yuqori qismidagi slayd-shouni ko&#39;rsatish
 DocType: Tax Withholding Rate,Tax Withholding Rate,Soliqni ushlab turish darajasi
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +547,Boms,Boms
 apps/erpnext/erpnext/stock/doctype/item/item.py +178,Stores,Do&#39;konlar
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +546,Boms,Boms
+apps/erpnext/erpnext/stock/doctype/item/item.py +177,Stores,Do&#39;konlar
+>>>>>>> Magic
 DocType: Project Type,Projects Manager,Loyiha menejeri
 DocType: Serial No,Delivery Time,Yetkazish vaqti
 apps/erpnext/erpnext/accounts/report/accounts_payable/accounts_payable.js +45,Ageing Based On,Qarish asosli
@@ -3336,8 +3484,13 @@ DocType: BOM,"Specify the operations, operating cost and give a unique Operation
 DocType: Travel Request,Any other details,Boshqa tafsilotlar
 DocType: Water Analysis,Origin,Kelib chiqishi
 apps/erpnext/erpnext/controllers/status_updater.py +207,This document is over limit by {0} {1} for item {4}. Are you making another {3} against the same {2}?,Ushbu hujjat {4} uchun {0} {1} tomonidan cheklangan. {2} ga qarshi yana bitta {3} qilyapsizmi?
+<<<<<<< HEAD
 apps/erpnext/erpnext/public/js/controllers/transaction.js +1216,Please set recurring after saving,Saqlaganingizdan keyin takroriy-ni tanlang
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +877,Select change amount account,O&#39;zgarish miqdorini tanlang
+=======
+apps/erpnext/erpnext/public/js/controllers/transaction.js +1221,Please set recurring after saving,Saqlaganingizdan keyin takroriy-ni tanlang
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +871,Select change amount account,O&#39;zgarish miqdorini tanlang
+>>>>>>> Magic
 DocType: Purchase Invoice,Price List Currency,Narxlari valyutasi
 DocType: Naming Series,User must always select,Foydalanuvchiga har doim tanlangan bo&#39;lishi kerak
 DocType: Stock Settings,Allow Negative Stock,Salbiy aksiyaga ruxsat berish
@@ -3439,8 +3592,13 @@ apps/erpnext/erpnext/education/doctype/fee_schedule/fee_schedule.js +76,View Fee
 apps/erpnext/erpnext/setup/doctype/company/company.js +55,Make Tax Template,Soliq jadvalini yarating
 apps/erpnext/erpnext/public/js/conf.js +28,User Forum,Foydalanuvchining forumi
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +328,Raw Materials cannot be blank.,Xom ashyoni bo&#39;sh bo&#39;lishi mumkin emas.
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1032,Row #{0} (Payment Table): Amount must be negative,Row # {0} (To&#39;lov jadvali): Miqdori salbiy bo&#39;lishi kerak
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +570,"Could not update stock, invoice contains drop shipping item.","Qimmatli qog&#39;ozlar yangilanib bo&#39;lmadi, hisob-faktura tomchi qoplama mahsulotini o&#39;z ichiga oladi."
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1022,Row #{0} (Payment Table): Amount must be negative,Row # {0} (To&#39;lov jadvali): Miqdori salbiy bo&#39;lishi kerak
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +569,"Could not update stock, invoice contains drop shipping item.","Qimmatli qog&#39;ozlar yangilanib bo&#39;lmadi, hisob-faktura tomchi qoplama mahsulotini o&#39;z ichiga oladi."
+>>>>>>> Magic
 DocType: Contract,Fulfilment Status,Bajarilish holati
 DocType: Lab Test Sample,Lab Test Sample,Laborotoriya namunasi
 DocType: Item Variant Settings,Allow Rename Attribute Value,Nomini o&#39;zgartirish xususiyatiga ruxsat bering
@@ -3578,7 +3736,11 @@ DocType: Purchase Receipt Item,Recd Quantity,Raqamlar soni
 apps/erpnext/erpnext/regional/report/eway_bill/eway_bill.py +170,Doc Date,Doc tarixi
 apps/erpnext/erpnext/education/doctype/program_enrollment/program_enrollment.py +64,Fee Records Created - {0},Yaratilgan yozuvlar - {0}
 DocType: Asset Category Account,Asset Category Account,Aktiv turkumidagi hisob
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1027,Row #{0} (Payment Table): Amount must be positive,Row # {0} (To&#39;lov jadvali): Miqdor ijobiy bo&#39;lishi kerak
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1017,Row #{0} (Payment Table): Amount must be positive,Row # {0} (To&#39;lov jadvali): Miqdor ijobiy bo&#39;lishi kerak
+>>>>>>> Magic
 apps/erpnext/erpnext/stock/doctype/item/item.js +440,Select Attribute Values,Nitelik qiymatlarini tanlang
 DocType: Purchase Invoice,Reason For Issuing document,Hujjatni berish uchun sabab
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +583,Stock Entry {0} is not submitted,Stock Entry {0} yuborilmadi
@@ -3642,7 +3804,11 @@ DocType: Supplier Scorecard Criteria,Criteria Weight,Kriterlar Og&#39;irligi
 apps/erpnext/erpnext/patches/v11_0/add_default_email_template_for_leave.py +7,Leave Approval Notification,Tasdiqlash xabarnomasidan chiqing
 DocType: Buying Settings,Default Buying Price List,Standart xarid narxlari
 DocType: Payroll Entry,Salary Slip Based on Timesheet,Vaqt jadvaliga asosan ish haqi miqdori
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/report/item_price_stock/item_price_stock.py +55,Buying Rate,Xarid qilish darajasi
+=======
+apps/erpnext/erpnext/stock/report/item_price_stock/item_price_stock.py +49,Buying Rate,Xarid qilish darajasi
+>>>>>>> Magic
 apps/erpnext/erpnext/controllers/buying_controller.py +590,Row {0}: Enter location for the asset item {1},Row {0}: {1} obyekti elementi uchun joyni kiriting
 DocType: Request for Quotation,PUR-RFQ-.YYYY.-,PUR-RFQ-YYYYY.-
 DocType: Company,About the Company,Kompaniya haqida
@@ -3964,7 +4130,11 @@ DocType: Company,Default Receivable Account,Oladigan schyot hisob
 DocType: Purchase Invoice,Deemed Export,Qabul qilingan eksport
 DocType: Stock Entry,Material Transfer for Manufacture,Ishlab chiqarish uchun material etkazib berish
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +20,Discount Percentage can be applied either against a Price List or for all Price List.,Chegirma foizlar yoki Narxlar ro&#39;yxatiga yoki barcha Narxlar ro&#39;yxatiga nisbatan qo&#39;llanilishi mumkin.
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +432,Accounting Entry for Stock,Qimmatli qog&#39;ozlar uchun hisob yozuvi
+=======
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +426,Accounting Entry for Stock,Qimmatli qog&#39;ozlar uchun hisob yozuvi
+>>>>>>> Magic
 DocType: Lab Test,LabTest Approver,LabTest Approval
 apps/erpnext/erpnext/education/doctype/assessment_plan/assessment_plan.py +49,You have already assessed for the assessment criteria {}.,Siz allaqachon baholash mezonlari uchun baholagansiz {}.
 DocType: Vehicle Service,Engine Oil,Motor moyi
@@ -4252,7 +4422,11 @@ DocType: Activity Cost,Billing Rate,Billing darajasi
 ,Qty to Deliver,Miqdorni etkazish
 DocType: Amazon MWS Settings,Amazon will synch data updated after this date,Amazon bu sana so&#39;ng yangilangan ma&#39;lumotlarni sinxronlashtiradi
 ,Stock Analytics,Stock Analytics
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +538,Operations cannot be left blank,Operatsiyalarni bo&#39;sh qoldirib bo&#39;lmaydi
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +537,Operations cannot be left blank,Operatsiyalarni bo&#39;sh qoldirib bo&#39;lmaydi
+>>>>>>> Magic
 apps/erpnext/erpnext/healthcare/doctype/lab_test/lab_test.py +72,Lab Test(s) ,Laborotoriya sinovlari
 DocType: Maintenance Visit Purpose,Against Document Detail No,Hujjat bo&#39;yicha batafsil ma&#39;lumot yo&#39;q
 apps/erpnext/erpnext/regional/__init__.py +11,Deletion is not permitted for country {0},{0} mamlakat uchun o&#39;chirishga ruxsat yo&#39;q
@@ -4341,7 +4515,11 @@ DocType: Employee Boarding Activity,Applicable in the case of Employee Onboardin
 DocType: Asset,Fully Depreciated,To&#39;liq Amortizatsiyalangan
 DocType: Item Barcode,UPC-A,UPC-A
 ,Stock Projected Qty,Qimmatli qog&#39;ozlar miqdori
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +516,Customer {0} does not belong to project {1},Xaridor {0} loyihaga {1} tegishli emas
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +515,Customer {0} does not belong to project {1},Xaridor {0} loyihaga {1} tegishli emas
+>>>>>>> Magic
 DocType: Employee Attendance Tool,Marked Attendance HTML,Belgilangan tomoshabin HTML
 apps/erpnext/erpnext/utilities/activation.py +73,"Quotations are proposals, bids you have sent to your customers","Qabullar sizning mijozlaringizga yuborilgan takliflar, takliflar"
 DocType: Sales Invoice,Customer's Purchase Order,Xaridor buyurtma buyurtmasi
@@ -4370,7 +4548,11 @@ DocType: Grading Scale Interval,Grading Scale Interval,Baholash o&#39;lchov oral
 DocType: Sales Invoice Item,Discount (%) on Price List Rate with Margin,Narh-navo bilan narx-navo bahosi bo&#39;yicha chegirma (%)
 DocType: Healthcare Service Unit Type,Rate / UOM,Rate / UOM
 apps/erpnext/erpnext/patches/v7_0/create_warehouse_nestedset.py +59,All Warehouses,Barcha saqlash
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1306,No {0} found for Inter Company Transactions.,Inter kompaniyasi operatsiyalari uchun {0} topilmadi.
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1296,No {0} found for Inter Company Transactions.,Inter kompaniyasi operatsiyalari uchun {0} topilmadi.
+>>>>>>> Magic
 DocType: Travel Itinerary,Rented Car,Avtomobil lizing
 apps/erpnext/erpnext/public/js/hub/components/profile_dialog.js +15,About your Company,Sizning kompaniyangiz haqida
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +144,Credit To account must be a Balance Sheet account,Hisobga olish uchun Hisob balansi yozuvi bo&#39;lishi kerak
@@ -4591,7 +4773,11 @@ DocType: Appraisal Goal,Weightage (%),Og&#39;irligi (%)
 apps/erpnext/erpnext/selling/page/point_of_sale/point_of_sale.js +555,Change POS Profile,POS profilini o&#39;zgartirish
 DocType: Bank Reconciliation Detail,Clearance Date,Bo&#39;shatish sanasi
 DocType: Delivery Settings,Dispatch Notification Template,Xabarnoma shablonini yuborish
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/doctype/item/item.py +729,"Asset is already exists against the item {0}, you cannot change the has serial no value","Assot allaqachon {0} elementiga nisbatan mavjud bo&#39;lsa, undagi o&#39;zgarishlarni ketma-ket qiymati yo&#39;q"
+=======
+apps/erpnext/erpnext/stock/doctype/item/item.py +722,"Asset is already exists against the item {0}, you cannot change the has serial no value","Assot allaqachon {0} elementiga nisbatan mavjud bo&#39;lsa, undagi o&#39;zgarishlarni ketma-ket qiymati yo&#39;q"
+>>>>>>> Magic
 apps/erpnext/erpnext/education/report/course_wise_assessment_report/course_wise_assessment_report.html +10,Assessment Report,Baholash bo&#39;yicha hisobot
 apps/erpnext/erpnext/hr/doctype/payroll_entry/payroll_entry.js +26,Get Employees,Ishchilarni oling
 apps/erpnext/erpnext/assets/doctype/asset/asset.py +72,Gross Purchase Amount is mandatory,Umumiy xarid miqdori majburiydir
@@ -4921,6 +5107,10 @@ DocType: Material Request Item,For Warehouse,QXI uchun
 apps/erpnext/erpnext/stock/doctype/delivery_trip/delivery_trip.py +45,Delivery Notes {0} updated,Yetkazib berish xatlari {0} yangilandi
 DocType: Employee,Offer Date,Taklif sanasi
 apps/erpnext/erpnext/selling/page/sales_funnel/sales_funnel.py +35,Quotations,Qo&#39;shtirnoq
+<<<<<<< HEAD
+=======
+apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +48,Item Code &gt; Item Group &gt; Brand,Mahsulot kodi&gt; Mahsulot guruhi&gt; Tovar
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/page/pos/pos.js +742,You are in offline mode. You will not be able to reload until you have network.,Siz oflayn rejasiz. Tarmoqqa ega bo&#39;lguncha qayta yuklay olmaysiz.
 apps/erpnext/erpnext/hr/doctype/leave_period/leave_period.js +90,Grant,Grant
 apps/erpnext/erpnext/education/doctype/student_group_creation_tool/student_group_creation_tool.py +47,No Student Groups created.,Hech qanday talabalar guruhi yaratilmagan.
@@ -4946,7 +5136,11 @@ apps/erpnext/erpnext/education/doctype/program_enrollment/program_enrollment.py 
 DocType: Fiscal Year,Year Name,Yil nomi
 apps/erpnext/erpnext/hr/doctype/salary_slip/salary_slip.py +323,There are more holidays than working days this month.,Bu oyda ish kunlaridan ko&#39;ra ko&#39;proq bayramlar bor.
 apps/erpnext/erpnext/controllers/buying_controller.py +760,Following items {0} are not marked as {1} item. You can enable them as {1} item from its Item master,{0} elementdan so&#39;ng {1} element sifatida belgilanmagan. Ularni Item masterdan {1} element sifatida faollashtirishingiz mumkin
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py +108,PDC/LC Ref,PDC / LC Ref
+=======
+apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py +101,PDC/LC Ref,PDC / LC Ref
+>>>>>>> Magic
 DocType: Production Plan Item,Product Bundle Item,Mahsulot paketi elementi
 DocType: Sales Partner,Sales Partner Name,Savdo hamkorining nomi
 apps/erpnext/erpnext/hooks.py +141,Request for Quotations,Takliflar uchun so&#39;rov
@@ -5010,7 +5204,11 @@ apps/erpnext/erpnext/accounts/doctype/account/chart_of_accounts/verified/standar
 DocType: Purchase Taxes and Charges,Tax Amount After Discount Amount,Chegirma summasi bo&#39;yicha soliq summasi
 DocType: Patient,Inpatient Status,Statsionar ahvoli
 DocType: Daily Work Summary Settings,Daily Work Summary Settings,Kundalik ish sarlavhalari sozlamalari
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1301,Selected Price List should have buying and selling fields checked.,Tanlangan narxlari ro&#39;yxatida sotib olish va sotish joylari tekshirilishi kerak.
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1291,Selected Price List should have buying and selling fields checked.,Tanlangan narxlari ro&#39;yxatida sotib olish va sotish joylari tekshirilishi kerak.
+>>>>>>> Magic
 apps/erpnext/erpnext/controllers/buying_controller.py +681,Please enter Reqd by Date,Iltimos sanasi bo&#39;yicha Reqd kiriting
 DocType: Payment Entry,Internal Transfer,Ichki pul o&#39;tkazish
 DocType: Asset Maintenance,Maintenance Tasks,Xizmat vazifalari
@@ -5168,7 +5366,11 @@ DocType: Staffing Plan Detail,Vacancies,Bo&#39;sh ish o&#39;rinlari
 DocType: Hotel Room,Hotel Room,Mehmonxona xonasi
 apps/erpnext/erpnext/accounts/doctype/budget/budget.py +57,Account {0} does not belongs to company {1},Hisob {0} kompaniya {1} ga tegishli emas
 DocType: Leave Type,Rounding,Rounding
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +997,Serial Numbers in row {0} does not match with Delivery Note,{0} qatoridagi ketma-ket raqamlar etkazib berish eslatmasiga mos kelmaydi
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +987,Serial Numbers in row {0} does not match with Delivery Note,{0} qatoridagi ketma-ket raqamlar etkazib berish eslatmasiga mos kelmaydi
+>>>>>>> Magic
 DocType: Employee Benefit Application,Dispensed Amount (Pro-rated),Tarqatilgan miqdor (Pro-rated)
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +36,"Then Pricing Rules are filtered out based on Customer, Customer Group, Territory, Supplier, Supplier Group, Campaign, Sales Partner etc.","Keyin narxlash qoidalari xaridorlar, xaridorlar guruhi, hududi, yetkazib beruvchisi, yetkazib beruvchi guruhi, aksiya, savdo bo&#39;yicha hamkor va boshqalar asosida filtrlanadi."
 DocType: Student,Guardian Details,Guardian tafsilotlari
@@ -5177,7 +5379,11 @@ DocType: Agriculture Task,Start Day,Boshlanish kuni
 DocType: Vehicle,Chassis No,Yo&#39;lak No
 DocType: Payment Request,Initiated,Boshlandi
 DocType: Production Plan Item,Planned Start Date,Rejalashtirilgan boshlanish sanasi
+<<<<<<< HEAD
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +644,Please select a BOM,"Iltimos, BOM-ni tanlang"
+=======
+apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +643,Please select a BOM,"Iltimos, BOM-ni tanlang"
+>>>>>>> Magic
 DocType: Purchase Invoice,Availed ITC Integrated Tax,ITC Integrated Tax solingan
 DocType: Purchase Order Item,Blanket Order Rate,Yorqinlik darajasi
 apps/erpnext/erpnext/hooks.py +157,Certification,Sertifikatlash
@@ -5220,7 +5426,11 @@ DocType: Stock Entry Detail,Basic Amount,Asosiy miqdori
 DocType: Training Event,Exam,Test
 apps/erpnext/erpnext/public/js/hub/hub_call.js +46,Marketplace Error,Bozor xatosi
 DocType: Complaint,Complaint,Shikoyat
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +534,Warehouse required for stock Item {0},{0} uchun kabinetga ombori kerak
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +533,Warehouse required for stock Item {0},{0} uchun kabinetga ombori kerak
+>>>>>>> Magic
 DocType: Leave Allocation,Unused leaves,Foydalanilmagan barglar
 apps/erpnext/erpnext/hr/doctype/loan/loan.js +83,Make Repayment Entry,To&#39;lovni to&#39;lashni amalga oshiring
 apps/erpnext/erpnext/patches/v11_0/update_department_lft_rgt.py +8,All Departments,Barcha bo&#39;limlar
@@ -5448,7 +5658,11 @@ DocType: Journal Entry,Cash Entry,Naqd kiritish
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse_tree.js +17,Child nodes can be only created under 'Group' type nodes,Bolalar tugunlari faqat &quot;Guruh&quot; tipidagi tugunlar ostida yaratilishi mumkin
 DocType: Attendance Request,Half Day Date,Yarim kunlik sana
 DocType: Academic Year,Academic Year Name,O&#39;quv yili nomi
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1185,{0} not allowed to transact with {1}. Please change the Company.,"{0} {1} bilan ishlashga ruxsat berilmadi. Iltimos, kompaniyani o&#39;zgartiring."
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1175,{0} not allowed to transact with {1}. Please change the Company.,"{0} {1} bilan ishlashga ruxsat berilmadi. Iltimos, kompaniyani o&#39;zgartiring."
+>>>>>>> Magic
 DocType: Sales Partner,Contact Desc,Bilan aloqa Desc
 DocType: Email Digest,Send regular summary reports via Email.,Elektron pochta orqali muntazam abstrakt hisobotlar yuboring.
 apps/erpnext/erpnext/hr/doctype/expense_claim/expense_claim.py +289,Please set default account in Expense Claim Type {0},"Iltimos, xarajat shikoyati toifasiga kiritilgan standart hisobni tanlang {0}"
@@ -5564,7 +5778,11 @@ DocType: Customer,From Lead,Qo&#39;rg&#39;oshin
 DocType: Amazon MWS Settings,Synch Orders,Sinxronizatsiya Buyurtma
 apps/erpnext/erpnext/config/manufacturing.py +13,Orders released for production.,Ishlab chiqarish uchun chiqarilgan buyurtmalar.
 apps/erpnext/erpnext/public/js/account_tree_grid.js +65,Select Fiscal Year...,Moliyaviy yilni tanlang ...
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +639,POS Profile required to make POS Entry,Qalin kirishni amalga oshirish uchun qalin profil talab qilinadi
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +638,POS Profile required to make POS Entry,Qalin kirishni amalga oshirish uchun qalin profil talab qilinadi
+>>>>>>> Magic
 apps/erpnext/erpnext/accounts/doctype/loyalty_program/loyalty_program.js +15,"Loyalty Points will be calculated from the spent done (via the Sales Invoice), based on collection factor mentioned.",Sodiqlik ballari eslatilgan yig&#39;ish faktori asosida amalga oshirilgan sarf-xarajatlardan (Sotuvdagi schyot-faktura orqali) hisoblab chiqiladi.
 DocType: Program Enrollment Tool,Enroll Students,O&#39;quvchilarni ro&#39;yxatga olish
 DocType: Company,HRA Settings,HRA sozlamalari
@@ -5627,7 +5845,11 @@ DocType: Subscription,Taxes,Soliqlar
 DocType: Purchase Invoice,capital goods,kapital mollari
 DocType: Purchase Invoice Item,Weight Per Unit,Birlikning og&#39;irligi
 apps/erpnext/erpnext/selling/doctype/sales_order/sales_order.py +355,Paid and Not Delivered,To&#39;langan va etkazib berilmagan
+<<<<<<< HEAD
 DocType: QuickBooks Migrator,Default Cost Center,Standart xarajatlar markazi
+=======
+DocType: Project,Default Cost Center,Standart xarajatlar markazi
+>>>>>>> Magic
 apps/erpnext/erpnext/config/stock.py +7,Stock Transactions,Stock Transactions
 DocType: Budget,Budget Accounts,Byudjet hisobi
 DocType: Employee,Internal Work History,Ichki ishlash tarixi
@@ -5764,7 +5986,11 @@ DocType: Asset Repair,Asset Repair,Aktivlarni ta&#39;mirlash
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.py +152,Row {0}: Currency of the BOM #{1} should be equal to the selected currency {2},Row {0}: BOM # {1} valyutasi tanlangan valyutaga teng bo&#39;lishi kerak {2}
 DocType: Journal Entry Account,Exchange Rate,Valyuta kursi
 DocType: Patient,Additional information regarding the patient,Bemor haqida qo&#39;shimcha ma&#39;lumot
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +657,Sales Order {0} is not submitted,Savdo Buyurtma {0} yuborilmadi
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +656,Sales Order {0} is not submitted,Savdo Buyurtma {0} yuborilmadi
+>>>>>>> Magic
 DocType: Homepage,Tag Line,Tag qatori
 DocType: Fee Component,Fee Component,Narxlar komponenti
 apps/erpnext/erpnext/config/hr.py +286,Fleet Management,Filo boshqarish
@@ -5781,6 +6007,7 @@ DocType: Healthcare Practitioner,Mobile,Mobil
 DocType: Training Event,Contact Number,Aloqa raqami
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.py +74,Warehouse {0} does not exist,{0} ombori mavjud emas
 DocType: Cashier Closing,Custody,Saqlash
+apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +54,Supplier &gt; Supplier Group,Yetkazib beruvchi&gt; Yetkazib beruvchi guruhi
 DocType: Employee Tax Exemption Proof Submission Detail,Employee Tax Exemption Proof Submission Detail,Xodimlarning soliq imtiyozlari tasdiqlanishi
 DocType: Monthly Distribution,Monthly Distribution Percentages,Oylik tarqatish foizi
 apps/erpnext/erpnext/stock/doctype/batch/batch.py +115,The selected item cannot have Batch,Tanlangan elementda partiyalar mavjud emas
@@ -5852,7 +6079,11 @@ DocType: POS Closing Voucher Invoices,POS Closing Voucher Invoices,Qalinligi uch
 DocType: Tax Rule,Sales Tax Template,Savdo bo&#39;yicha soliq jadvalini
 DocType: Employee Benefit Application Detail,Pay Against Benefit Claim,Foyda olish da&#39;vosiga qarshi to&#39;lov
 apps/erpnext/erpnext/accounts/doctype/cost_center/cost_center.js +21,Update Cost Center Number,Xarajat markazi raqamini yangilash
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/page/pos/pos.js +2522,Select items to save the invoice,Billingni saqlash uchun elementlarni tanlang
+=======
+apps/erpnext/erpnext/accounts/page/pos/pos.js +2521,Select items to save the invoice,Billingni saqlash uchun elementlarni tanlang
+>>>>>>> Magic
 DocType: Employee,Encashment Date,Inkassatsiya sanasi
 DocType: Training Event,Internet,Internet
 DocType: Special Test Template,Special Test Template,Maxsus test shablonni
@@ -5905,7 +6136,11 @@ apps/erpnext/erpnext/stock/doctype/item/item.js +82,This Item is a Variant of {0
 DocType: Workstation,per hour,soatiga
 DocType: Blanket Order,Purchasing,Xarid qilish
 DocType: Announcement,Announcement,E&#39;lon
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py +129,Customer LPO,Xaridor LPO
+=======
+apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py +108,Customer LPO,Xaridor LPO
+>>>>>>> Magic
 DocType: Education Settings,"For Batch based Student Group, the Student Batch will be validated for every Student from the Program Enrollment.",Partiyalarga asoslangan talabalar guruhi uchun Talabalar partiyasi dasturni ro&#39;yxatga olishdan har bir talaba uchun tasdiqlanadi.
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.py +51,Warehouse can not be deleted as stock ledger entry exists for this warehouse.,"Ushbu ombor uchun kabinetga hisob yozuvi mavjud bo&#39;lib, omborni o&#39;chirib bo&#39;lmaydi."
 apps/erpnext/erpnext/public/js/setup_wizard.js +25,Distribution,Tarqatish
@@ -5989,8 +6224,13 @@ apps/erpnext/erpnext/accounts/doctype/fiscal_year/fiscal_year.js +19,"To set thi
 apps/erpnext/erpnext/accounts/report/tds_computation_summary/tds_computation_summary.py +130,Amount of TDS Deducted,TDS miqdori kamaydi
 DocType: Production Plan,Include Subcontracted Items,Subpudratli narsalarni qo&#39;shish
 apps/erpnext/erpnext/projects/doctype/project/project.py +281,Join,Ishtirok etish
+<<<<<<< HEAD
 apps/erpnext/erpnext/stock/report/stock_projected_qty/stock_projected_qty.py +81,Shortage Qty,Miqdori miqdori
 apps/erpnext/erpnext/stock/doctype/item/item.py +779,Item variant {0} exists with same attributes,{0} mahsulot varianti bir xil xususiyatlarga ega
+=======
+apps/erpnext/erpnext/stock/report/stock_projected_qty/stock_projected_qty.py +21,Shortage Qty,Miqdori miqdori
+apps/erpnext/erpnext/stock/doctype/item/item.py +772,Item variant {0} exists with same attributes,{0} mahsulot varianti bir xil xususiyatlarga ega
+>>>>>>> Magic
 DocType: Loan,Repay from Salary,Ish haqidan to&#39;lash
 apps/erpnext/erpnext/accounts/doctype/payment_request/payment_request.py +405,Requesting payment against {0} {1} for amount {2},{0} {1} dan {2}
 DocType: Additional Salary,Salary Slip,Ish haqi miqdori
@@ -6277,6 +6517,7 @@ apps/erpnext/erpnext/stock/doctype/item/item.py +211,Website Image {0} attached 
 DocType: Issue,Content Type,Kontent turi
 DocType: Asset,Assets,Aktivlar
 apps/erpnext/erpnext/setup/setup_wizard/data/industry_type.py +17,Computer,Kompyuter
+apps/erpnext/erpnext/setup/doctype/naming_series/naming_series.py +212,Please set Naming Series for {0} via Setup &gt; Settings &gt; Naming Series,"Iltimos, {0} uchun nomlash seriyasini Sozlamalar&gt; Sozlamalar&gt; Naming Series orqali sozlang"
 DocType: Item,List this Item in multiple groups on the website.,Ushbu elementni veb-saytdagi bir nechta guruhda ko&#39;rsating.
 DocType: Subscription,Current Invoice End Date,Joriy hisob-fakturaning tugash sanasi
 DocType: Payment Term,Due Date Based On,O&#39;tkazilgan sana asosida
@@ -6323,7 +6564,11 @@ DocType: Stock Entry,Default Source Warehouse,Standart manbalar ombori
 DocType: Item,Customer Code,Xaridor kodi
 DocType: Asset Maintenance Task,Last Completion Date,Oxirgi tugash sanasi
 apps/erpnext/erpnext/selling/report/inactive_customers/inactive_customers.py +72,Days Since Last Order,Oxirgi Buyurtma berib o&#39;tgan kunlar
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +437,Debit To account must be a Balance Sheet account,Debet Hisobni balans hisoboti bo&#39;lishi kerak
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +436,Debit To account must be a Balance Sheet account,Debet Hisobni balans hisoboti bo&#39;lishi kerak
+>>>>>>> Magic
 DocType: Asset,Naming Series,Namunaviy qator
 DocType: Vital Signs,Coated,Yopilgan
 apps/erpnext/erpnext/assets/doctype/asset/asset.py +181,Row {0}: Expected Value After Useful Life must be less than Gross Purchase Amount,Row {0}: Foydali Hayotdan keyin kutilgan qiymat Brüt Xarid Qabul qilingan miqdordan kam bo&#39;lishi kerak
@@ -6522,6 +6767,7 @@ DocType: Leave Block List,"If not checked, the list will have to be added to eac
 apps/erpnext/erpnext/stock/doctype/stock_entry/stock_entry.py +685,Posting date and posting time is mandatory,Yozish sanasi va joylashtirish vaqti majburiydir
 apps/erpnext/erpnext/config/buying.py +76,Tax template for buying transactions.,Jurnallarni sotib olish uchun soliq shablonni.
 ,Item Prices,Mahsulot bahosi
+apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.js +51,Customer &gt; Customer Group &gt; Territory,Xaridor&gt; Mijozlar guruhi&gt; Zonasi
 DocType: Purchase Order,In Words will be visible once you save the Purchase Order.,Buyurtma buyurtmasini saqlaganingizdan so&#39;ng So&#39;zlar paydo bo&#39;ladi.
 DocType: Holiday List,Add to Holidays,Bayramlarga qo&#39;shiling
 DocType: Woocommerce Settings,Endpoint,Endpoint
@@ -6622,7 +6868,10 @@ DocType: Manufacturing Settings,Default Finished Goods Warehouse,Standart tayyor
 apps/erpnext/erpnext/healthcare/doctype/patient_appointment/patient_appointment.js +316,Please select Patient,"Marhamat, Klinik-ni tanlang"
 apps/erpnext/erpnext/accounts/report/gross_profit/gross_profit.py +74,Sales Person,Savdo vakili
 DocType: Hotel Room Package,Amenities,Xususiyatlar
+<<<<<<< HEAD
 DocType: QuickBooks Migrator,Undeposited Funds Account,Qaytarilmagan mablag&#39;lar hisoblari
+=======
+>>>>>>> Magic
 apps/erpnext/erpnext/config/accounts.py +271,Budget and Cost Center,Byudjet va xarajatlar markazi
 apps/erpnext/erpnext/accounts/doctype/pos_profile/pos_profile.py +65,Multiple default mode of payment is not allowed,Ko&#39;p ko&#39;rsatiladigan to&#39;lov shakli yo&#39;l qo&#39;yilmaydi
 DocType: Sales Invoice,Loyalty Points Redemption,Sadoqatli ballarni qaytarish
@@ -6760,7 +7009,11 @@ apps/erpnext/erpnext/hr/doctype/attendance_request/attendance_request.py +52,Att
 DocType: POS Profile,Account for Change Amount,O&#39;zgarish miqdorini hisobga olish
 DocType: QuickBooks Migrator,Connecting to QuickBooks,QuickBooks-ga ulanish
 DocType: Exchange Rate Revaluation,Total Gain/Loss,Jami daromad / zararlar
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1178,Invalid Company for Inter Company Invoice.,Inter kompaniyasi hisob-fakturasi uchun noto&#39;g&#39;ri Kompaniya.
+=======
+apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1168,Invalid Company for Inter Company Invoice.,Inter kompaniyasi hisob-fakturasi uchun noto&#39;g&#39;ri Kompaniya.
+>>>>>>> Magic
 DocType: Purchase Invoice,input service,kirish xizmati
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +249,Row {0}: Party / Account does not match with {1} / {2} in {3} {4},Row {0}: Partiya / Hisob {3} {4} da {1} / {2}
 DocType: Employee Promotion,Employee Promotion,Ishchilarni rag&#39;batlantirish
@@ -6880,7 +7133,11 @@ DocType: Item Attribute,Numeric Values,Raqamli qiymatlar
 apps/erpnext/erpnext/public/js/setup_wizard.js +56,Attach Logo,Asosiy joylashtiring
 apps/erpnext/erpnext/stock/doctype/batch/batch.js +51,Stock Levels,Kabinetga darajalari
 DocType: Customer,Commission Rate,Komissiya stavkasi
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/bank_statement_transaction_entry/bank_statement_transaction_entry.py +241,Successfully created payment entries,Muvaffaqiyatli to&#39;lov yozuvlari yaratildi
+=======
+apps/erpnext/erpnext/accounts/doctype/bank_statement_transaction_entry/bank_statement_transaction_entry.py +240,Successfully created payment entries,Muvaffaqiyatli to&#39;lov yozuvlari yaratildi
+>>>>>>> Magic
 apps/erpnext/erpnext/stock/doctype/item/item.js +584,Make Variant,Variant qiling
 apps/erpnext/erpnext/accounts/doctype/payment_entry/payment_entry.py +156,"Payment Type must be one of Receive, Pay and Internal Transfer","To&#39;lov shakli olish, to&#39;lash va ichki to&#39;lovlardan biri bo&#39;lishi kerak"
 DocType: Travel Itinerary,Preferred Area for Lodging,Turar joy uchun turar joy
@@ -6926,7 +7183,11 @@ apps/erpnext/erpnext/assets/doctype/asset/asset.js +384,Select Serial No,Seriya 
 apps/erpnext/erpnext/setup/setup_wizard/operations/install_fixtures.py +124,Designer,Dizayner
 apps/erpnext/erpnext/config/selling.py +163,Terms and Conditions Template,Shartlar va shartlar shabloni
 DocType: Serial No,Delivery Details,Yetkazib berish haqida ma&#39;lumot
+<<<<<<< HEAD
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +618,Cost Center is required in row {0} in Taxes table for type {1},Narxlar markazi {1} qatoridagi Vergiler jadvalidagi {0} qatorida talab qilinadi
+=======
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.py +612,Cost Center is required in row {0} in Taxes table for type {1},Narxlar markazi {1} qatoridagi Vergiler jadvalidagi {0} qatorida talab qilinadi
+>>>>>>> Magic
 DocType: Program,Program Code,Dastur kodi
 DocType: Terms and Conditions,Terms and Conditions Help,Shartlar va shartlar Yordam
 ,Item-wise Purchase Register,Ob&#39;ektga qarab sotib olish Register

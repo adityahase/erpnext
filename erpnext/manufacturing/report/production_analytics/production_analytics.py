@@ -31,7 +31,11 @@ def get_columns(filters):
 		columns.append(
 			{
 			"label": _(label),
+<<<<<<< HEAD
 			"fieldname": field_name,
+=======
+			"field_name":field_name,
+>>>>>>> Magic
 			"fieldtype": "Float",
 			"width": 120
 		},

@@ -9,7 +9,11 @@ import erpnext
 import frappe
 from erpnext.stock.doctype.delivery_trip.delivery_trip import get_contact_and_address, notify_customers
 from erpnext.tests.utils import create_test_contact_and_address
+<<<<<<< HEAD
 from frappe.utils import add_days, now_datetime
+=======
+from frappe.utils import add_days, now_datetime, nowdate
+>>>>>>> Magic
 
 
 class TestDeliveryTrip(unittest.TestCase):
@@ -72,6 +76,29 @@ class TestDeliveryTrip(unittest.TestCase):
 		self.assertEqual(len(route_list[0]), 2)  # [home_address, locked_stop]
 		self.assertEqual(len(route_list[1]), 3)  # [locked_stop, second_stop, home_address]
 
+<<<<<<< HEAD
+=======
+		if not frappe.db.exists("Delivery Trip", "TOUR-00000"):
+			delivery_trip = frappe.get_doc({
+				"doctype": "Delivery Trip",
+				"company": erpnext.get_default_company(),
+				"date": add_days(nowdate(), 5),
+				"departure_time": add_days(now_datetime(), 5),
+				"driver": frappe.db.get_value('Driver', {"full_name": "Newton Scmander"}),
+				"vehicle": "JB 007",
+				"delivery_stops": [{
+					"customer": "_Test Customer",
+					"address": contact.shipping_address.parent,
+					"contact": contact.contact_person.parent
+				}]
+			})
+			delivery_trip.insert()
+
+			notify_customers(delivery_trip=delivery_trip.name)
+			delivery_trip.load_from_db()
+			self.assertEqual(delivery_trip.email_notification_sent, 1)
+
+>>>>>>> Magic
 
 def create_driver():
 	if not frappe.db.exists("Driver", "Newton Scmander"):
@@ -97,7 +124,10 @@ def create_delivery_notification():
 
 	delivery_settings = frappe.get_single("Delivery Settings")
 	delivery_settings.dispatch_template = 'Delivery Notification'
+<<<<<<< HEAD
 	delivery_settings.save()
+=======
+>>>>>>> Magic
 
 
 def create_vehicle():

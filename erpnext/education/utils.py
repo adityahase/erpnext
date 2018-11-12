@@ -2,7 +2,7 @@
 # Copyright (c) 2015, Frappe Technologies and contributors
 # For lice
 
-from __future__ import unicode_literals
+from __future__ import unicode_literals, division
 import frappe
 from frappe import _
 
@@ -10,19 +10,19 @@ class OverlapError(frappe.ValidationError): pass
 
 def validate_overlap_for(doc, doctype, fieldname, value=None):
 	"""Checks overlap for specified field.
-	
-	:param fieldname: Checks Overlap for this field 
+
+	:param fieldname: Checks Overlap for this field
 	"""
-	
+
 	existing = get_overlap_for(doc, doctype, fieldname, value)
 	if existing:
 		frappe.throw(_("This {0} conflicts with {1} for {2} {3}").format(doc.doctype, existing.name,
 			doc.meta.get_label(fieldname) if not value else fieldname , value or doc.get(fieldname)), OverlapError)
-	
+
 def get_overlap_for(doc, doctype, fieldname, value=None):
 	"""Returns overlaping document for specified field.
-	
-	:param fieldname: Checks Overlap for this field 
+
+	:param fieldname: Checks Overlap for this field
 	"""
 
 	existing = frappe.db.sql("""select name, from_time, to_time from `tab{0}`
@@ -42,7 +42,8 @@ def get_overlap_for(doc, doctype, fieldname, value=None):
 		}, as_dict=True)
 
 	return existing[0] if existing else None
-	
+
+
 def validate_duplicate_student(students):
 	unique_students= []
 	for stud in students:
@@ -51,3 +52,5 @@ def validate_duplicate_student(students):
 				.format(stud.student, stud.student_name, unique_students.index(stud.student)+1, stud.idx))
 		else:
 			unique_students.append(stud.student)
+
+		return None

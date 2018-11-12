@@ -34,6 +34,10 @@ def get_data():
 				},
 				{
 					"type": "doctype",
+					"name": "Web Academy Applicant"
+				},
+				{
+					"type": "doctype",
 					"name": "Student Admission"
 				},
 				{
@@ -181,19 +185,44 @@ def get_data():
 			"items": [
 				{
 					"type": "doctype",
-					"name": "Course"
-				},
-				{
-					"type": "doctype",
 					"name": "Program"
 				},
 				{
 					"type": "doctype",
-					"name": "Instructor"
+					"name": "Course"
+				},
+				{
+					"type": "doctype",
+					"name": "Article"
+				},
+				{
+					"type": "doctype",
+					"name": "Video"
+				},
+				{
+					"type": "doctype",
+					"name": "Quiz"
 				},
 				{
 					"type": "doctype",
 					"name": "Room"
+				}
+			]
+		},
+		{
+			"label": _("LMS Activity"),
+			"items": [
+				{
+					"type": "doctype",
+					"name": "Course Enrollment"
+				},
+				{
+					"type": "doctype",
+					"name": "Course Activity"
+				},
+				{
+					"type": "doctype",
+					"name": "Quiz Activity"
 				}
 			]
 		},

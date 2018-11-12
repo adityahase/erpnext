@@ -395,4 +395,8 @@ def make_pricing_rule(doctype, docname):
 	doc.selling = 1 if doctype == "Customer" else 0
 	doc.buying = 1 if doctype == "Supplier" else 0
 
+<<<<<<< HEAD
 	return doc
+=======
+	return doc
+>>>>>>> Magic
