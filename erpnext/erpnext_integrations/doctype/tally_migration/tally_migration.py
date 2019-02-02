@@ -4,6 +4,7 @@
 
 from __future__ import unicode_literals
 from bs4 import BeautifulSoup as bs
+import json
 
 import frappe
 from frappe.model.document import Document
