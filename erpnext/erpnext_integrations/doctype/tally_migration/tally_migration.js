@@ -104,6 +104,59 @@ frappe.ui.form.on('Tally Migration', {
 				</BODY>
 			</ENVELOPE>`;
 
+		frm.voucher_count_query = `<ENVELOPE>
+				<HEADER>
+					<VERSION>1</VERSION>
+					<TALLYREQUEST>Export</TALLYREQUEST>
+					<TYPE>Function</TYPE>
+					<ID>$$NumItems</ID>
+				</HEADER>
+				<BODY>
+					<DESC>
+						<STATICVARIABLES>
+							<SVCURRENTCOMPANY>${frm.doc.company}</SVCURRENTCOMPANY>
+							<SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+						</STATICVARIABLES>
+						<FUNCPARAMLIST>
+							<PARAM>New Group</PARAM>
+						</FUNCPARAMLIST>
+						<TDL>
+							<TDLMESSAGE>
+								<COLLECTION Name="New Group">
+									<TYPE>Voucher</TYPE>
+								</COLLECTION>
+							</TDLMESSAGE>
+						</TDL>
+					</DESC>
+				</BODY>
+			</ENVELOPE>`;
+
+		frm.company_period_query = `<ENVELOPE>
+				<HEADER>
+					<VERSION>1</VERSION>
+					<TALLYREQUEST>Export</TALLYREQUEST>
+					<TYPE>Collection</TYPE>
+					<ID>New Group</ID>
+				</HEADER>
+				<BODY>
+					<DESC>
+						<STATICVARIABLES>
+							<SVCURRENTCOMPANY>${frm.doc.company}</SVCURRENTCOMPANY>
+							<SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+						</STATICVARIABLES>
+						<TDL>
+							<TDLMESSAGE>
+								<COLLECTION Name="New Group">
+									<TYPE>COMPANY</TYPE>
+									<NATIVEMETHOD>Starting From</NATIVEMETHOD>
+									<NATIVEMETHOD>Ending At</NATIVEMETHOD>
+								</COLLECTION>
+							</TDLMESSAGE>
+						</TDL>
+					</DESC>
+				</BODY>
+			</ENVELOPE>`;
+
 		if(true) {
 			var wrapper = $(frm.fields_dict["master_fetch_status"].wrapper).empty();
 			let fetch_table = $(`<table class="table table-bordered">
@@ -127,6 +180,29 @@ frappe.ui.form.on('Tally Migration', {
 				fetch_table.find('tbody').append(fetch_row);
 			});
 			wrapper.append(fetch_table);
+		}
+		if(true) {
+			var voucher_fetch_wrapper = $(frm.fields_dict["voucher_fetch_status"].wrapper).empty();
+			let voucher_fetch_table = $(`<table class="table table-bordered">
+				<thead>
+					<tr>
+						<td>${ __("Date Range") }</td>
+						<td>${ __("Status") }</td>
+						<td>${ __("Data") }</td>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>`);
+			const voucher_fetch_status = JSON.parse(frm.doc.voucher_fetch_status);
+			Object.entries(voucher_fetch_status).forEach(entry => {
+				const fetch_row = $(`<tr>
+					<td>${entry[0]}</td>
+					<td>${entry[1].status}</td>
+					<td>${entry[1].data}</td>
+				</tr>`);
+				voucher_fetch_table.find('tbody').append(fetch_row);
+			});
+			voucher_fetch_wrapper.append(voucher_fetch_table);
 		}
 		if(frm.doc.company) {
 			frm.set_df_property("company", "read_only", 1);
@@ -167,6 +243,10 @@ frappe.ui.form.on('Tally Migration', {
 				}
 			)
 		});
+	},
+	fetch_voucher_count: function(frm) {
+		frm.events.fetch(frm, frm.voucher_count_query, (data) => frm.call("update_voucher_count", data));
+		frm.events.fetch(frm, frm.company_period_query, (data) => frm.call("update_company_period", data))
 	},
 	fetch: function(frm, query, callback) {
 		$.ajax({
