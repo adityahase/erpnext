@@ -80,11 +80,11 @@ def create_root_accounts(company):
 	]
 	for account, root_type in root_accounts:
 		try:
-			account_name = encode_company_abbr(account, company)
+			account_name = encode_company_abbr("TL - {}".format(account), company)
 			if not frappe.db.exists({"doctype": "Account", "name": account_name, "company": company}):
 				frappe.get_doc({
 					"doctype": "Account",
-					"account_name": account,
+					"account_name": "TL - {}".format(account),
 					"root_type": root_type,
 					"is_group": 1,
 					"company": company,
@@ -97,13 +97,13 @@ def create_accounts(company, accounts):
 	accounts = resolve_name_conflicts(accounts)
 	for account in accounts:
 		try:
-			account_name = encode_company_abbr(account["account_name"], company)
+			account_name = encode_company_abbr("TL - {}".format(account["account_name"]), company)
 			if not frappe.db.exists("Account", account_name):
 				account_type = {"Sundry Debtors": "Receivable", "Sundry Creditors": "Payable"}.get(account["account_name"])
 				yield frappe.get_doc({
 					"doctype": "Account",
-					"account_name": account["account_name"],
-					"parent_account": encode_company_abbr(account["parent_account"], company),
+					"account_name": "TL - {}".format(account["account_name"]),
+					"parent_account": encode_company_abbr("TL - {}".format(account["parent_account"]), company),
 					"account_type": account_type,
 					"is_group": account["is_group"],
 					"company": company,
