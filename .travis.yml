@@ -2,7 +2,7 @@ language: python
 dist: trusty
 
 python:
-  - "2.7"
+  - "pypy3.5"
 
 services:
   - mysql
@@ -31,6 +31,7 @@ before_script:
   - echo "USE mysql;\nGRANT ALL PRIVILEGES ON \`test_frappe\`.* TO 'test_frappe'@'localhost';\n" | mysql -u root -ptravis
 
   - cd ~/frappe-bench
+  - ./env/bin/python -V
   - bench get-app erpnext $TRAVIS_BUILD_DIR
   - bench use test_site
   - bench reinstall --mariadb-root-username root --mariadb-root-password travis --yes
